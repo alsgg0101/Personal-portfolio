@@ -1,0 +1,836 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #000;
+    color: hsl(75, 6%, 87%);
+
+}
+
+header {
+    background-color: hsla(184, 100%, 52%, 0.5);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(30px);
+    z-index: 1;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    display: grid;
+    justify-content: center;
+}
+
+.logo p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    display: grid;
+    justify-content: end;
+    position: relative;
+    left: 2rem;
+}
+
+.hero {
+    padding: 6rem 15%;
+    line-height: 2rem;
+}
+
+.hero h2 {
+    font-family: 'Raleway', sans-serif;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+
+    border-right: 5px solid;
+    width: 91%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-color: hsla(184, 100%, 52%, 0.5);
+    animation:
+        typing 2s steps(20),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+.hero h2 strong {
+    color: hsla(184, 100%, 52%, 0.5);
+}
+
+.hero h3 {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.hero button {
+    padding: 10px;
+    border: none;
+    border-radius: 10rem;
+    background-color: hsla(184, 100%, 52%, 0.5);
+
+    transition: all .2s ease-in-out;
+}
+
+.hero button:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+.hero button a {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: hsl(75, 6%, 87%);
+}
+
+.about-me {
+    padding: 2rem 10%;
+}
+
+.about-me h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me p {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.about-me .image {
+    width: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me .image img {
+    height: 10rem;
+    border-radius: 100%;
+}
+
+.projects {
+    padding: 2rem 10%;
+}
+
+.projects h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    border: 0.1px solid hsla(184, 100%, 52%, 0.5);
+    box-shadow: 10px 10px 10px hsla(184, 100%, 52%, 0.5);
+    margin-bottom: 5rem;
+}
+
+.projects .project img {
+    width: 100%;
+}
+
+.project p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.project .text {
+    padding: 1.5rem;
+}
+
+.projects a svg {
+    filter: invert(1);
+    height: 2.5em;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+.technologies {
+    padding: 2rem 10%;
+}
+
+.technologies h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.technologies p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.container-html {
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(8, 116, 181, 1) 0%, rgba(0, 255, 241, 1) 100%);
+    width: 40%;
+    height: 1rem;
+}
+
+.container-css {
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(8, 116, 181, 1) 0%, rgba(0, 255, 241, 1) 100%);
+    width: 40%;
+    height: 1rem;
+}
+
+.technology {
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+.level {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+.additional-skills {
+    padding: 2rem 10%;
+}
+
+.additional-skills h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.additional-skills ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px;
+}
+
+.additional-skills li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.colored-dot {
+    font-size: 2.5rem;
+    color: hsla(184, 100%, 52%, 0.5);
+    padding-right: 1rem;
+}
+
+footer {
+    background-color: hsla(184, 100%, 52%, 0.269);
+}
+
+.footer-container {
+    padding: 2rem 10%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-container h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.footer-container p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-container p span {
+    color: hsla(184, 100%, 52%, 0.5);
+}
+
+.footer-socials a {
+    filter: invert(1);
+    padding: 0.8rem;
+}
+
+footer .footer-socials a svg {
+    height: 1.8em;
+}
+
+/* Mobile Style */
+@media only screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+}
+
+/* Tablet Style */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        padding: 2rem 0;
+        display: grid;
+        justify-content: start;
+    }
+
+    .logo p {
+        font-size: 0.9rem;
+        letter-spacing: 0.3rem;
+        bottom: 0.5rem;
+    }
+
+    nav .menu ul {
+        display: flex;
+    }
+
+    nav .socials {
+        filter: invert(1);
+        padding-left: 1rem;
+    }
+
+    nav .socials a {
+        padding-left: 0.5rem;
+    }
+
+    nav .socials a svg {
+        height: 1.5em;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        color: hsl(75, 6%, 87%);
+        font-size: 0.8rem;
+        padding-right: 1rem;
+    }
+
+    .hero {
+        padding: 6rem 15%;
+        line-height: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2.3rem;
+        width: 73%;
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .hero button {
+        padding: 15px;
+    }
+
+    .about-me {
+        padding: 6rem 15%;
+        display: flex;
+    }
+
+    .about-me h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        display: block;
+        justify-content: left;
+    }
+
+    .about-me p {
+        font-size: 0.8rem;
+        padding: 0.3rem 0;
+        text-align: left;
+    }
+
+    .about-me .image {
+        width: auto;
+        margin: 2rem;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-me .image img {
+        height: 10rem;
+        border-radius: 100%;
+    }
+
+    .projects {
+        padding: 6rem 15%;
+    }
+
+    .projects h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: start;
+    }
+
+    .project {
+        border: 0.1px solid hsla(184, 100%, 52%, 0.5);
+        box-shadow: 10px 10px 10px hsla(184, 100%, 52%, 0.5);
+        margin-bottom: 5rem;
+    }
+
+    .projects .project img {
+        width: 100%;
+    }
+
+    .project p {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 900;
+    }
+
+    .project .text {
+        padding: 1.5rem;
+    }
+
+    .projects a svg {
+        filter: invert(1);
+        height: 2.5em;
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .technologies {
+        padding: 6rem 15%;
+    }
+    
+    .technologies h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .technologies p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+    }
+    
+    .container-html {
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(8, 116, 181, 1) 0%, rgba(0, 255, 241, 1) 100%);
+        width: 40%;
+        height: 1rem;
+    }
+    
+    .container-css {
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(8, 116, 181, 1) 0%, rgba(0, 255, 241, 1) 100%);
+        width: 40%;
+        height: 1rem;
+    }
+    
+    .technology {
+        position: relative;
+        margin-bottom: 1.2rem;
+    }
+    
+    .level {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 0.7rem;
+        opacity: 0.8;
+    }
+
+    .additional-skills {
+        padding: 6rem 15%;
+    }
+    
+    .additional-skills h4 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .additional-skills ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px;
+    }
+    
+    .additional-skills li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    
+    .colored-dot {
+        font-size: 2.5rem;
+        color: hsla(184, 100%, 52%, 0.5);
+        padding-right: 1rem;
+    }
+
+    .footer-container h3 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer-container p {
+        font-size: 1rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .footer-socials a {
+        padding: 0.8rem;
+    }
+
+    footer .footer-socials a svg {
+        height: 2em;
+    }
+}
+
+/* Desktop Style */
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding: 2rem 0;
+        display: grid;
+        justify-content: start;
+    }
+
+    .logo p {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        bottom: 0.5rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    nav .menu ul {
+        display: flex;
+    }
+
+    nav .socials {
+        filter: invert(1);
+        padding-left: 1rem;
+    }
+
+    nav .socials a {
+        padding-left: 1rem;
+    }
+
+    nav .socials a svg {
+        height: 2em;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        color: hsl(75, 6%, 87%);
+        font-size: 1.2rem;
+        padding-right: 2rem;
+    }
+
+    .hero {
+        padding: 20vh 15%;
+        line-height: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        width: 47%;
+    }
+
+    .hero h3 {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .hero button {
+        padding: 20px;
+        border: none;
+        border-radius: 10rem;
+        background-color: hsla(184, 100%, 52%, 0.5);
+
+        transition: all .2s ease-in-out;
+    }
+
+    .hero button:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+    }
+
+    .hero button a {
+        font-family: monospace;
+        font-weight: 400;
+        font-size: 1rem;
+        text-decoration: none;
+        color: hsl(75, 6%, 87%);
+    }
+
+    .about-me {
+        padding: 4rem 15%;
+        display: flex;
+    }
+
+    .about-me h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        display: block;
+        justify-content: left;
+    }
+
+    .about-me p {
+        font-size: 1rem;
+        padding: 0.3rem 0;
+        text-align: left;
+    }
+
+    .about-me .image {
+        width: auto;
+        margin: 2rem;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-me .image img {
+        height: 15rem;
+        border-radius: 100%;
+    }
+
+    .projects {
+        padding: 4rem 15%;
+    }
+
+    .projects h3 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: start;
+    }
+
+    .project {
+        border: 0.1px solid hsla(184, 100%, 52%, 0.5);
+        box-shadow: 10px 10px 10px hsla(184, 100%, 52%, 0.5);
+        margin-bottom: 5rem;
+
+        transition: transform 1s ease;
+    }
+
+    .project:hover {
+        transform: scale(1.1);
+    }
+
+    .projects .project img {
+        width: 100%;
+    }
+
+    .project p {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    .project .text {
+        padding: 1.5rem;
+    }
+
+    .projects a svg {
+        filter: invert(1);
+        height: 2.5em;
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto;
+        justify-content: space-between;
+    }
+
+    .technologies {
+        padding: 4rem 15%;
+    }
+    
+    .technologies h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .technologies p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+    
+    .container-html {
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(8, 116, 181, 1) 0%, rgba(0, 255, 241, 1) 100%);
+        width: 40%;
+        height: 1rem;
+    }
+    
+    .container-css {
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(8, 116, 181, 1) 0%, rgba(0, 255, 241, 1) 100%);
+        width: 40%;
+        height: 1rem;
+    }
+    
+    .technology {
+        position: relative;
+        margin-bottom: 1.2rem;
+    }
+    
+    .level {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+
+    .additional-skills {
+        padding: 4rem 15%;
+    }
+    
+    .additional-skills h4 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .additional-skills ul {
+        display: grid;
+        grid-template-columns: 35% 35%;
+        grid-template-rows: 70px;
+    }
+    
+    .additional-skills li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    
+    .colored-dot {
+        font-size: 2.5rem;
+        color: hsla(184, 100%, 52%, 0.5);
+        padding-right: 1rem;
+    }
+
+}
